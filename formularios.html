@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../13_hospitalMilitar/styles/styles.css">
+    <!--Íconos-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/cc533dcf02.css" crossorigin="anonymous">
+
+    <title>Formularios</title>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body style="background-color: #E9E9E9;">
+    <br>
+    <!-- Imagen en la parte superior -->
+    <img src="../13_hospitalMilitar/img/banner2.png" alt="Logo del Sitio Web del Hospital Militar"
+        class="img-fluid banner" style="height: 230px;" tabindex="1">
+    <br>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #D9D9D9;">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-fill" style="margin: 0 auto;">
+                <li class="nav-item btn-nav">
+                    <a class="nav-link" href="./pag_principal.html" tabindex="2">Inicio</a>
+                </li>
+                <li class="nav-item btn-nav">
+                    <a class="nav-link" href="#" tabindex="3">Nosotros</a>
+                </li>
+                <li class="nav-item btn-nav">
+                    <a class="nav-link" href="#" tabindex="4">Pacientes</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./formularios.html" tabindex="5">Formularios</a>
+                </li>
+                <li class="nav-item btn-nav">
+                    <a class="nav-link" href="./comunicamos.html" tabindex="6">Comunicamos</a>
+                </li>
+                <li class="nav-item btn-nav">
+                    <a class="nav-link" href="#" tabindex="7">Norma de Relacionamiento</a>
+                </li>
+                <li class="nav-item btn-nav">
+                    <a class="nav-link" href="#" tabindex="8">Transparencia</a>
+                </li>
+                <li class="nav-item btn-nav">
+                    <a class="nav-link" href="#" tabindex="9">Educación</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <!-- Contenido de la página -->
+    <!-- Título del Formulario -->
+    <div style="background-color: #C1BFBF; margin-top: -24px;">
+        <H1 tabindex="10">FORMULARIO DE SEGURIDAD DEL PACIENTE 02</H1>
+    </div>
+    <!-- FORMULARIO -->
+    <div class="container">
+        <hr>
+        <h1 tabindex="11" class="agendar-title">Agendar Cita Médica</h1>
+        <form action="procesar_formulario.php" method="post">
+            <div class="form-container">
+                <label for="nombre" tabindex="12">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required tabindex="13">
+                <label for="correo" tabindex="14" style="margin-left: 30px;">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required tabindex="15"><br><br>
+
+                <label for="telefono" tabindex="16" style="text-align: left;">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required tabindex="17"><br><br>
+
+                <label for="fecha" tabindex="18">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required tabindex="19">
+                <label for="hora" tabindex="20" style="margin-left: 30px;">Hora de la cita:</label>
+                <input type="time" id="hora" name="hora" required tabindex="21"><br><br>
+
+                <label for="especialidad" tabindex="22">Especialidad médica:</label>
+                <select id="especialidad" name="especialidad" required tabindex="23">
+                    <option value="">Seleccionar especialidad</option>
+                    <option value="cardiología">Cardiología</option>
+                    <option value="dermatología">Dermatología</option>
+                    <option value="ginecología">Ginecología</option>
+                    <option value="oftalmología">Oftalmología</option>
+                    <option value="pediatría">Pediatría</option>
+                </select><br><br>
+
+                <label for="comentario" tabindex="24">Comentario:</label>
+                <textarea id="comentario" name="comentario" tabindex="25"></textarea><br><br>
+                <div class="submit-form">
+                    <input type="submit" value="Agendar cita" tabindex="26">
+                </div>
+            </div>
+        </form>
+        <hr>
+    </div>
+</body>
+<footer>
+    <div class="container-fluid footer-1">
+        <div class="row">
+            <div class="col-lg-3">
+                <img src="../13_hospitalMilitar/img/logo-small 1.png" alt="Logo de las Fuerzas Armadas"
+                    class="logo-ffaa" tabindex="27">
+            </div>
+            <div class="col-lg-3">
+                <p class="title-card-footer" tabindex="28">CONTADOR DE VISITAS</p>
+            </div>
+            <div class="col-lg-3">
+                <p class="title-card-footer" tabindex="29">MAPA DEL SITIO</p>
+                <div class="container-fluid mt-4">
+                    <div class="row">
+                        <div class="col-lg-6 text-map" tabindex="30">Inicio</div>
+                        <div class="col-lg-6 text-map" tabindex="34">Comunicamos</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 text-map" tabindex="31">Nosotros</div>
+                        <div class="col-lg-6 text-map" tabindex="35">Educación</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 text-map" tabindex="32">Paciente</div>
+                        <div class="col-lg-6 text-map" tabindex="36">Normas de Relacionamiento</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 text-map" tabindex="33">Formularios</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <p class="title-card-footer" tabindex="37">CONTACTO</p>
+                <div class="container-fluid mt-3">
+                    <div class="row">
+                        <div class="col-lg-2"><i class='bx bx-map bx-sm' tabindex="38"></i></div>
+                        <div class="col-lg-10 text-contact">
+                            <p tabindex="39">Av. Queseras del Medio 521 y Av. Gran Colombia</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2"><i class='bx bx-envelope bx-sm' tabindex="40"></i></div>
+                        <div class="col-lg-10 text-contact">
+                            <p tabindex="41">derivaciones.he1.issfa@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2"><i class='bx bx-phone bx-sm' tabindex="42"></i></div>
+                        <div class="col-lg-10 text-contact">
+                            <p tabindex="43">Teléfono: 02-3968300</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1 sm-circle"><img src="../13_hospitalMilitar/img/fb_logo.png"
+                                alt="Logo de Facebook" class="sm-image" tabindex="44"></div>
+                        <div class="col-lg-1 sm-circle"><img src="../13_hospitalMilitar/img/insta_logo.png"
+                                alt="Logo de Instagram" class="sm-image" tabindex="45"></div>
+                        <div class="col-lg-1 sm-circle"><img src="../13_hospitalMilitar/img/twitter_logo.png"
+                                alt="Logo de Twitter" class="sm-image" tabindex="46"></div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1"></div>
+
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-2">
+        <p class="copyright" tabindex="47">Copyright © 2023 Hospital Militar. Derechos Reservados.</p>
+        <div class="img-container-comaco">
+            <img src="../13_hospitalMilitar/img/mindefnac_logo.png"
+                alt="Logo del Ministerio de Defensa Nacional del Ecuador" class="img-min-logo" tabindex="48">
+            <img src="../13_hospitalMilitar/img/Comaco 1.png" alt="Logo de las Fuerzas Armadas del Ecuador"
+                class="img-ffaa-logo" tabindex="49">
+            <img src="../13_hospitalMilitar/img/Comaco 2.png" alt="Logo de la Fuerza Terrestre Ecuatoriana"
+                class="img-ffaa-logo" tabindex="50">
+            <img src="../13_hospitalMilitar/img/Comaco 3.png" alt="Logo de la Armada del Ecuador" class="img-ffaa-logo"
+                tabindex="51">
+            <img src="../13_hospitalMilitar/img/Comaco 4.png" alt="Logo de la Fuerza Aérea Ecuatoriana"
+                class="img-ffaa-logo" tabindex="52">
+        </div>
+    </div>
+</footer>
+
+</html>
